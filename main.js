@@ -14,10 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
             if(letter==='enter'){
                 handleSubmitword();
                 return;
-            }
-
+            }else{if (letter==='del'){
+                handleDeleteletter();
+            }}
             updateGuessedwords(letter);
         };
+    }
+
+    function handleDeleteletter(){
+        const currentWordArr = getCurrentWordArr();
     }
 
     function getCurrentWordArr(){
