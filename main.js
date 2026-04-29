@@ -16,8 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }else{if (letter==='del'){
                 handleDeleteletter();
-            }}
+            }else{
             updateGuessedwords(letter);
+            }
+}
         };
     }
 
